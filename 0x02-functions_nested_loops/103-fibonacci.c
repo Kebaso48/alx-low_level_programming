@@ -4,7 +4,7 @@
  * a fibonnaci not exceeding 4000000
  * Return: Always 0
  */
-int main(void);
+int main(void)
 {
 	unsigned long num1 = 0, num2 = 1, add;
 	float sum;
