@@ -6,14 +6,15 @@
  * @dest: the buffer for copied string
  * Return: a pointer to destination string @dest
  */
-char *_strcpy(char *src, char *dest)
+char *_strcpy(char *dest, char *src)
 {
 	int chr = 0;
 
-	while (src[chr])
+	while (src[chr] != '\0')
 	{
 		dest[chr] = src[chr];
 		chr++;
 	}
+	
 	return (dest);
 }
