@@ -6,7 +6,7 @@ char *_strcpy(char *dest, char *src);
 dog_t *new_dog(char *name, float age, char *owner);
 
 /**
- * str_len - find length of string
+ * _strlen - find length of string
  * @s: the string
  * Return: string length
  */
@@ -21,7 +21,7 @@ int _strlen(char *s)
 }
 
 /**
- * str_cpy - copies string pointed by src to dest
+ * _strcpy - copies string pointed by src to dest
  * @dest: the buffer storing copied string
  * @src: the source of copied string
  * Return: pointer to dest
@@ -33,7 +33,7 @@ char *_strcpy(char *dest, char *src)
 	for (i = 0; src[i]; i++)
 		dest[i] = src[i];
 
-	dest[i] = '\0';;
+	dest[i] = '\0';
 
 	return (dest);
 }
