@@ -26,15 +26,15 @@ char *create_buf(char *file)
  * close_file - close file descriptors
  * @fdes: the file descriptors
  */
-void close_file(int fd)
+void close_file(int fdes)
 {
 	int cl;
 
-	cl = close(fd);
+	cl = close(fdes);
 
 	if (cl == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fdes);
 		exit(100);
 	}
 }
