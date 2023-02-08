@@ -15,7 +15,7 @@ char *create_buf(char *file)
 	char *words;
 
 	words = malloc(sizeof(char) * 1024);
-	
+
 	if (words == NULL)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
